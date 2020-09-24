@@ -25,12 +25,12 @@ Pod::Spec.new do |s|
   
   s.subspec 'Core' do |os|     
     os.resources = 'NIMKit/Resources/*.*'   
-    os.dependency 'SDWebImage', '~> 5.0.6'
+    os.dependency 'SDWebImage', '~> 5.9.1'
     os.dependency 'FLAnimatedImage', '~> 1.0.12'
     os.dependency 'Toast', '~> 3.0'         
     os.dependency 'TZImagePickerController', '~> 3.2.1'  
     os.dependency 'M80AttributedLabel', '~> 1.9.9' 
-    os.dependency 'YYImage', '~> 1.0.4'
+    os.dependency 'YYImage', :git => 'https://github.com/1275053499/YYImage.git'
 	os.dependency 'YYImage/WebP', '~> 1.0.4'       
 	      
   end
@@ -50,12 +50,12 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core_Free' do |os|
     os.resources = 'NIMKit/Resources/*.*'
-    os.dependency 'SDWebImage'
+    os.dependency 'SDWebImage', '~> 5.9.1'
     os.dependency 'FLAnimatedImage'
     os.dependency 'Toast'
     os.dependency 'M80AttributedLabel'
     os.dependency 'TZImagePickerController'
-    os.dependency 'YYImage'
+    os.dependency 'YYImage':git => 'https://github.com/1275053499/YYImage.git'
 	os.dependency 'YYImage/WebP'
   end
 
